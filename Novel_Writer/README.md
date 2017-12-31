@@ -19,4 +19,4 @@
 
  - Optimizer: RMSprop
 
- -- Result:
+ - Result:
