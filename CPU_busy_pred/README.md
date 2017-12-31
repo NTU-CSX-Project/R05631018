@@ -7,7 +7,11 @@ blue line: real <br>
 ![png](./imgs/sin_pred.png)<br><br>
 
 ## data_preparing.ipynb
-CPU data preparing<br><br>
+CPU data preparing: find the relationship of the features (such as the figs below) and decide what features should be used.
+<br>
+![png](./imgs/prep.png)<br><br>
+![png](./imgs/prep2.png)
+<br><br>
 
 ## cpu_pred.ipynb
 Seq2seq model for cpu busy predicting
