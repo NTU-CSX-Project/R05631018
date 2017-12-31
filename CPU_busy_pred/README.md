@@ -6,3 +6,5 @@ CPU data preparing
 
 ## cpu_pred.ipynb
 Seq2seq model for cpu busy predicting
+
+![png](./imgs/output_19_0.png)
