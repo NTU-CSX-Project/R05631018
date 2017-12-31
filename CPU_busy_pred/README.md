@@ -5,3 +5,4 @@ This is a simple seq2seq case using LSTM. We can understand seq2seq model by thi
 CPU data preparing
 
 ## cpu_pred.ipynb
+Seq2seq model for cpu busy predicting
