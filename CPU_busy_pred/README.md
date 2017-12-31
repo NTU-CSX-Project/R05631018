@@ -7,9 +7,8 @@ CPU data preparing
 ## cpu_pred.ipynb
 Seq2seq model for cpu busy predicting
 
-red line: pred
-blue line: real
-![png](./imgs/output_19_0.png)
-![png](./imgs/output_20_0.png)
-![png](./imgs/output_21_0.png)
-![png](./imgs/output_22_0.png)
+red line: pred <br>
+blue line: real <br>
+![png](./imgs/output_19_0.png)<br>
+![png](./imgs/output_20_0.png)<br>
+![png](./imgs/output_21_0.png)<br>
