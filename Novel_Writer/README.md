@@ -1,5 +1,7 @@
 ## Novel Writer
 
+ - Purpose : Write a short novel by the seq2seq model
+
  - Materials : 神雕俠侶 (romance_condor_heroes.txt)
 
  - Model : Seq2seq model with encoder:decoder = 50:50 <br>
@@ -19,4 +21,4 @@
 
  - Optimizer: RMSprop
 
- - Result:
+ - Result: Training...
