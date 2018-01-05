@@ -37,7 +37,9 @@
    　Epoch 499: 郭靖找到快華山的敵軍刀法刺去但 <br>
    　Epoch 500: 便相互快不忍不會膻中侵入紛紛出但 <br>
  <br>
-  - Novel Writer Test: <br>
+ 
+ - Novel Writer Test: <br>
+ 
  Initial Input : 楊過怒道郭靖你還我爹爹命來 <br>
  Output : <br>
  郭靖道我一生幫焦急麼楊過道我<br>
