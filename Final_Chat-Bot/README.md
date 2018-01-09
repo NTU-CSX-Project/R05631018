@@ -1,6 +1,6 @@
 ## Chat-Bot
 
-Based on seq2seq model.
+This is a Chinese chat-bot based on seq2seq model.
 
 The code will be released after 2018/1/15. Here is a api to demo the chatbot.
 
