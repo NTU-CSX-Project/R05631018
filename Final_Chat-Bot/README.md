@@ -16,13 +16,14 @@ It may return "但我現在已經知道了"
 ```python
 chatbot('我也知道')
 ```
-Output:
+- Output:
+
     '但我現在已經知道'
     
 ```python
 chatbot('安安你好給虧嗎')
 ```
-Output:
+- Output:
 
     '我是真心想向妳道謝'
     
