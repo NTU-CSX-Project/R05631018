@@ -23,5 +23,7 @@ Output:
 chatbot('安安你好給虧嗎')
 ```
 Output:
+
     '我是真心想向妳道謝'
+    
 ↑ "給虧" is not in the vocabulary
