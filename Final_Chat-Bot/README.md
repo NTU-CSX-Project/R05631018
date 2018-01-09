@@ -2,6 +2,8 @@
 
 This is a Chinese chat-bot based on seq2seq model.
 
+The datasets are from 民視八點檔
+
 The code will be released after 2018/1/15. Here is a api to demo the chatbot.
 
 ```python
