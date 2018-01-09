@@ -9,3 +9,19 @@ chatbot('我是真心想向妳保證')
 ```
 
     It may return "但我現在已經知道了"
+
+
+### Some Examples:
+
+```python
+chatbot('我也知道')
+```
+Output:
+    '但我現在已經知道'
+    
+```python
+chatbot('安安你好給虧嗎')
+```
+Output:
+    '我是真心想向妳道謝'
+↑ "給虧" is not in the vocabulary
