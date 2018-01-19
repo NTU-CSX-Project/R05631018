@@ -1,6 +1,6 @@
-## Chat-Bot
+# Chat-Bot
 
-This is a Chinese chat-bot based on seq2seq model.
+This is a Chinese chat-bot based on seq2seq attention model.
 
 The datasets are from 民視八點檔.
 
