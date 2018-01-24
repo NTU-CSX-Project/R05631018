@@ -12,14 +12,17 @@ sent_len = 10
 model_name = 'test'
 # new model
 os.system('mkdir ./model/'+model_name)
+
 # new word2vec model
 word2vec_lookup = Word2vec(model_name)
 dloader = loader(word2vec_lookup, mode='new', model_name=model_name, sent_len=sent_len)
-'''
+
 # pre-trained word2vec model
-dloader = loader(mode='pre_trained', model_name=model_name, sent_len=sent_len)
+# dloader = loader(mode='pre_trained', model_name=model_name, sent_len=sent_len)
+
+# loading the training data and pre-processing
 dloader.data_loading()
-'''
+
 # hyperparameters
 np.set_printoptions(precision=2)
 jieba.set_dictionary('./libs/dict_new.txt')
@@ -96,10 +99,10 @@ init = tf.global_variables_initializer()
 ls = list()
 with tf.Session() as sess:
     sess.run(init)
-    inp = '好�?不�?'
     print('Initial state:')
     for epo in range(epoch):
         t_start = time.time()
+        inp = '什麼時候要再過來玩'
         print(next_sent(inp))
         l = list()
         for i in range(int(len(dloader.sent_seg)/batch_size)):
@@ -109,7 +112,8 @@ with tf.Session() as sess:
             feed_dict.update({word_target[t]: batch_y[:, t] for t in range(dec_len)})
             _, lo = sess.run([update_step, loss_all], feed_dict=feed_dict)
             l.append(lo)
-            if (i+1)%400 == 0:
+            # show the testing every 800 iters
+            if (i+1)%800 == 0:
                 print('Epoch:', epo+1, 
                       ', iter:', i+1, 
                       ', loss:', np.mean(l))
@@ -119,7 +123,7 @@ with tf.Session() as sess:
                 print('------------------------------------------------------------------------------')
         ls.append(np.mean(l))
         #-----test-----
-        inp = '?�天要麻?��?一件�?'
+        inp = '改天要麻煩你一件事'
         resp = next_sent(inp)
         print('Input: '+''.join(inp))
         print('Output: '+''.join(resp))
@@ -131,7 +135,9 @@ with tf.Session() as sess:
         plt.show()
         t_end = time.time()
         print('--------------------------Time span:', t_end-t_start, '--------------------------')
-    s2s.save_model(sess, 'test')
+    s2s.save_model(sess=sess,
+                   saver=saver,
+                   name='test')
     # plot the loss
     plt.plot(np.arange(len(ls)), ls)
     plt.title('Loss')

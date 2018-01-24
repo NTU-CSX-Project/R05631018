@@ -2,7 +2,7 @@ import numpy as np
 import jieba
 
 class loader(object):
-    def __init__(self, word2vec_lookup=None, mode='pre_trained', model_name='', sent_len=10):
+    def __init__(self, word2vec_lookup=None, mode='pre_trained', model_name=''):
         print('Data loader initializing')
         print('mode: ' + mode)
         self.model_name = model_name
@@ -22,7 +22,6 @@ class loader(object):
             self.oneHotPos2vec_lookup = self.oneHotPos2vec_lookup[None][0]
             self.vec_list = np.load('./model/'+model_name+'/vec_list.npy')
             self.voca_size = len(self.word2vec_lookup.keys())
-            self.sent_len = sent_len
             print('done')
         elif mode is 'new':
             print('Creating new dicts...')
@@ -30,7 +29,6 @@ class loader(object):
             self.word2vec_lookup['<unk>'] = np.zeros_like(self.word2vec_lookup['在'])
             self.word2vec_lookup['<end>'] = np.ones_like(self.word2vec_lookup['在'])*-1
             self.voca_size = len(self.word2vec_lookup.keys())
-            self.sent_len = sent_len
             self.word2oneHot = dict()
             self.word2oneHotPos = dict()
             self.oneHotPos2word = dict()
@@ -55,7 +53,8 @@ class loader(object):
             print('done')
         else:
             print('Initialzing error, mode name?')
-    def data_loading(self):
+    def data_loading(self, sent_len):
+        self.sent_len = sent_len
         data = list()
         dataset_len = list()
         for i in range(5):
