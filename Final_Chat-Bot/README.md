@@ -12,7 +12,7 @@ The datasets are from 民視八點檔.
     jieba 0.39,
     matplotlib 2.0.0
 
-### <a href=http://chatbotdemolab301j.azurewebsites.net/>Demo link</a>
+### <a>Demo link</a>
    
     
 ---to be continued---
