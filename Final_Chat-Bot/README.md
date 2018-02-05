@@ -15,7 +15,7 @@ The datasets are from 民視八點檔.
 ### <a href="chatbotdemolab301j.azurewebsites.net">Demo link</a>
    
     
-### Seq2seq attention
+### <a href="https://www.tensorflow.org/tutorials/seq2seq">Seq2seq attention</a>
 
 - attention mechanism:
 
