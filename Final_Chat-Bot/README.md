@@ -13,7 +13,8 @@ The datasets are from 民視八點檔.
     matplotlib 2.0.0
 
 ### <a href="http://chatbotdemolab301j.azurewebsites.net/">Demo link</a>
-   
+
+![png](./imgs/demo.png)
     
 ### <a href="https://www.tensorflow.org/tutorials/seq2seq">Seq2seq attention</a>
 
