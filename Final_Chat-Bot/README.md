@@ -12,7 +12,20 @@ The datasets are from 民視八點檔.
     jieba 0.39,
     matplotlib 2.0.0
 
-### <a>Demo link</a>
+### <a href="chatbotdemolab301j.azurewebsites.net">Demo link</a>
    
     
----to be continued---
+### Seq2seq attention
+
+<br>
+<br>
+attention mechanism:
+![jpg](./imgs/attention_mechanism.jpg)
+<br>
+<br>
+attention func:
+![jpg](./imgs/attention_equation_0.jpg)
+<br>
+<br>
+score func:
+![jpg](./imgs/attention_equation_1.jpg)
