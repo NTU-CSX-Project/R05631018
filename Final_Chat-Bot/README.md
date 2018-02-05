@@ -19,13 +19,13 @@ The datasets are from 民視八點檔.
 
 <br>
 <br>
-attention mechanism:
+attention mechanism: <br>
 ![jpg](./imgs/attention_mechanism.jpg)
 <br>
 <br>
-attention func:
+attention func: <br>
 ![jpg](./imgs/attention_equation_0.jpg)
 <br>
 <br>
-score func:
+score func: <br>
 ![jpg](./imgs/attention_equation_1.jpg)
